@@ -1,0 +1,7 @@
+On page http://10.12.248.13/index.php?page=recover we right click->inspect element. We found that there's a text object that's hidden with a mail:
+<input type="hidden" name="mail" value="webmaster@borntosec.com" maxlength="15">
+
+We switch 'hidden' to 'text'
+<input type="text" name="mail" value="webmaster@borntosec.com" maxlength="15">
+
+We then empty it and press submit, then we get the flag.

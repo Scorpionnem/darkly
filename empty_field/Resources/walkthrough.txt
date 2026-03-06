@@ -1,0 +1,1 @@
+On page http://10.12.248.13/?page=feedback we only leave the message empty and we get the flag

