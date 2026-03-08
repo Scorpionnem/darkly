@@ -1,0 +1,8 @@
+In the robots.txt we find that theres a .hidden link
+inside we see a bunch of subdirectories with more subdirs inside them.
+It would be annoying to go through everything so I wrote a crawler in c++
+
+it checks every link and reads every readme
+
+we just launch it and wait! ./a.out http://DARKLY_IP/.hidden/
+
