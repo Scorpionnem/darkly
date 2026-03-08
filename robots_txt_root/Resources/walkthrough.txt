@@ -1,0 +1,22 @@
+In all websites, we can find a robots.txt to tell bots wich places to crawl to register new websites.
+In this one we can see
+
+User-agent: *
+Disallow: /whatever
+Disallow: /.hidden
+
+So I went to DARKLY_IP/whatever
+
+and found
+
+Index of /whatever/
+../
+htpasswd                                           29-Jun-2021 18:09                  38
+
+I downloaded htpasswd and inside was the password to the root account (for DARKLY_IP/admin)
+
+root:437394baff5aa33daa618be47b75cb49
+
+If we decode the md5 (using a website) we find the password to root is 'qwerty123@'
+
+Boom thats the flag!
