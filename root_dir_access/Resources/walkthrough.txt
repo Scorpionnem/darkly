@@ -1,0 +1,9 @@
+When looking for a page we can choose a file. But there is nothing stopping us from going to the file at ../../.. ...etc
+
+So we can just access all the files from the / directory!
+
+if we access http://10.12.248.13/?page=../../../../../../../../../../../../../../../../../../../../../../../../etc/passwd
+
+(100% need less .. but idk I used this)
+
+we can access the passwd file and this gives us the flag.
