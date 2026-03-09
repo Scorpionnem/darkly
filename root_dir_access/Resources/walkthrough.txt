@@ -7,3 +7,5 @@ if we access http://10.12.248.13/?page=../../../../../../../../../../../../../..
 (100% need less .. but idk I used this)
 
 we can access the passwd file and this gives us the flag.
+
+This could have easily been fixed by just checking if the user's request actually stays where it is supposed to be before sending back the page.

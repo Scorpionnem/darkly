@@ -21,3 +21,5 @@ Surname being the password if we decrypt 3bf1114a986ba87ed28fc1b5884fc2f8 we get
 shadow
 
 we then log as admin and get the flag
+
+This could have been fixed by checking the request sent by the user to not execute the SQL

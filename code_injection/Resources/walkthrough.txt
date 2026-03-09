@@ -1,1 +1,4 @@
 On page http://10.12.248.13/?page=feedback the fields allow you to input html code in it. Inputting < or > will give the flag. You can also use <h1>text to test it.
+
+To fix this breach, dont just render the input of the user as html.
+The hacker could put redirects and lure people in the feedback page.

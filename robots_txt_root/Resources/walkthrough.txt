@@ -20,3 +20,5 @@ root:437394baff5aa33daa618be47b75cb49
 If we decode the md5 (using a website) we find the password to root is 'qwerty123@'
 
 Boom thats the flag!
+
+To fix this, just dont expose to the public that you have these files hanging around on your website.

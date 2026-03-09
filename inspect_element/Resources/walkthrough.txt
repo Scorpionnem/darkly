@@ -5,3 +5,5 @@ We switch 'hidden' to 'text'
 <input type="text" name="mail" value="webmaster@borntosec.com" maxlength="15">
 
 We then empty it and press submit, then we get the flag.
+
+Well, for this one, dont leave an adress hidden in the html.
