@@ -6,4 +6,4 @@ We switch 'hidden' to 'text'
 
 We then empty it and press submit, then we get the flag.
 
-Well, for this one, dont leave an adress hidden in the html.
+Well, for this one, dont leave an address hidden in the html.

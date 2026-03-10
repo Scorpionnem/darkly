@@ -22,4 +22,5 @@ shadow
 
 we then log as admin and get the flag
 
-This could have been fixed by checking the request sent by the user to not execute the SQL
+This could have been fixed by checking the request sent by the user to not execute the SQL, by using parametrized requests so that the input string isn't treated
+as SQL.
